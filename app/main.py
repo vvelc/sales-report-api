@@ -1,15 +1,15 @@
 """
 Sales Report API
 FastAPI application for generating PDF sales reports from CSV data.
-Author: Victor Velazquez - Invntio SRL
+Author: Victor Velazquez
 """
 
+import logging
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from app.routers import reports
 from app.config.settings import settings
-import logging
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
