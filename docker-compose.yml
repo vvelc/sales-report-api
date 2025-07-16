@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  sales-report-api:
+    build: .
+    container_name: sales-report-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./reports:/app/reports
+    environment:
+      - DEBUG=false
+    restart: unless-stopped
