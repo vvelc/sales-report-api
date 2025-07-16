@@ -26,7 +26,7 @@ Perfect for automating sales reporting workflows.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/sales-report-api.git
+git clone https://github.com/vvelc/sales-report-api.git
 cd sales-report-api
 
 # Run with Docker Compose
